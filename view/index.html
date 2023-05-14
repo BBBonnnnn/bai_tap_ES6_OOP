@@ -108,22 +108,24 @@
                 </div>
             </div>
             <div class="form-group text-center mt-2">
-                <button class="btn btn-success" id="btnThemSinhVien" type="submit">Thêm sinh viên</button>
-                <button id="btnLuu" class="btn btn-success" type="button">Lưu sinh viên</button>
+                <button class="btn btn-success" id="btnThemSinhVien" type="submit">Thêm person</button>
+                <button id="btnCapNhat" class="btn btn-success" type="button">Cập nhật person</button>
             </div>
         </form>
 
         <div class="form-group">
             <span>Show</span>
-            <select name="" id="">
-                <option value="">----Chọn Loại------</option>
-                <option value="">Student</option>
-                <option value="">Employee</option>
+            <select name="" id="filter">
+                <option>All</option>
+                <option>Student</option>
+                <option>Employee</option>
+                <option>Customer</option>
             </select>
         </div>
         <table class="table mt-2" id="tableSV">
-            <thead class="bg-warning">
-                <tr>
+            <thead class="bg-warning" id="tblhead">
+                <tr id="trhead">
+                    <td>Loại</td>
                     <td>Mã</td>
                     <td>Họ Tên</td>
                     <td>Địa Chỉ</td>
@@ -138,6 +140,7 @@
 
 
     <!-- js custom -->
-    <script type="module" src="/controller/index.js"></script>
+    <!-- <script type="module" src="/controller/index.js"></script> -->
+    <script type="module" src="/controller/index_OOP.js"></script>
 </body>
 </html>
