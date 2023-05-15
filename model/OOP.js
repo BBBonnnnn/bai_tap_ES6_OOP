@@ -1,10 +1,13 @@
 class Person {
     loai='';
-    arrPerson = [];
     hoTen='';
     diaChi='';
     ma='';
     email='';
+}
+
+class arrPerson {
+    arrPerson = [];
     addPerson(newPerSon){
         this.arrPerson.push(newPerSon);
         return this.arrPerson;
@@ -76,6 +79,8 @@ class Person {
         return this.arrPerson;
        }    
 }
+
+
 class Student extends Person{
     toan=0;
     ly=0;
@@ -101,4 +106,4 @@ class Customer extends Person{
     danhGia='';
 }
 
-export {Person,Student,Employee,Customer}
+export {Person,Student,Employee,Customer,arrPerson}

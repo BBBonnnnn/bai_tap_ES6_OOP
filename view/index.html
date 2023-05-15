@@ -31,23 +31,24 @@
             </div>
             <div class="row">
                 <div class="col-6">
-                    <p>Mã sinh viên</p>
-                    <input class="form-control" id="ma" />
+                    <p>Mã </p>
+                    <input class="form-control" id="ma" placeholder="Mã" />
                     <p id="error-required-maSinhVien" class="text text-danger"></p>
-                    <p id="error-length-maSinhVien" class="text text-danger"></p>
+                    <p id="error-ma" class="text text-danger"></p>
+                    <p id="error-only-nunber" class="text text-danger"></p>
                 </div>
                 
                 <div class="col-6">
                     <p>Địa chỉ</p>
                     <input class="form-control" id="diaChi" />
-                    <p id="error-required-soDienThoai" class="text text-danger"></p>
-                    <p id="error-regex-soDienThoai" class="text text-danger"></p>
+                    <p id="error-required-diaChi" class="text text-danger"></p>
+                    <p id="error-regex-diaChi" class="text text-danger"></p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-6">
                     <p>email</p>
-                    <input class="form-control" id="email" />
+                    <input class="form-control" id="email" placeholder="email"/>
                     <p id="error-required-email" class="text text-danger"></p>
                     <p id="error-regex-email" class="text text-danger"></p>
                 </div>
@@ -137,10 +138,9 @@
 
             </tbody>
         </table>
-
-
+    <!-- js utility -->
+    <script src="/util/method.js"></script>
     <!-- js custom -->
-    <!-- <script type="module" src="/controller/index.js"></script> -->
     <script type="module" src="/controller/index_OOP.js"></script>
 </body>
 </html>
